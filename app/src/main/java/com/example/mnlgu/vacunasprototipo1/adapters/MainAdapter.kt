@@ -45,6 +45,11 @@ class MainAdapter (context: Context, paises: List<Pais>): RecyclerView.Adapter<R
     override fun onBindViewHolder(recordHolder: RecordHolder, i: Int) {
         recordHolder.name.text = paises.get(i).name
     }
+
+    fun filterList(filteredList: ArrayList<Pais>){
+        paises = filteredList
+        notifyDataSetChanged()
+    }
 }
 
 class RecordHolder(itemView: View): RecyclerView.ViewHolder(itemView) {

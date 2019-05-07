@@ -7,4 +7,5 @@ class Vacuna (nombre: String, descripcion: String, descripcionEnfermedad: String
     var descripcion = descripcion
     var descripcionEnfermedad = descripcionEnfermedad
     var enCartilla = enCartilla
+    var id: Int = -1
 }
