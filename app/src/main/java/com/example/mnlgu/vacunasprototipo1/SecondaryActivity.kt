@@ -20,6 +20,8 @@ class SecondaryActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_secondary)
 
+        supportActionBar?.hide()
+
         pais = intent.getSerializableExtra("Pais") as Pais
         listaVacunas = pais.listaVacunas
 

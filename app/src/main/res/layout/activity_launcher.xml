@@ -8,7 +8,7 @@
         tools:context=".LauncherActivity">
 
     <Button
-            android:text="Ver enfermedades"
+            android:text="Países"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/siguienteButton"
@@ -31,7 +31,7 @@
             app:layout_constraintHorizontal_bias="0.497"
             android:textStyle="bold"/>
     <TextView
-            android:text="A continuación puedes elegir entre ver las vacunas de cada país, o ver las que tienes pendientes"
+            android:text="Infórmate acerca de qué vacuna necesitas para viajar a otros países y conoce tu cartilla de vacunación"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/textView2" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
@@ -40,10 +40,18 @@
             android:textSize="28sp"
             android:gravity="center"/>
     <Button
-            android:text="Ver Carrito"
+            android:text="Vacunas que necesito"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/verCarritoButton" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/siguienteButton"/>
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/siguienteButton"/>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/table"
+            android:id="@+id/showTabla" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toTopOf="parent"/>
+
+
 </android.support.constraint.ConstraintLayout>

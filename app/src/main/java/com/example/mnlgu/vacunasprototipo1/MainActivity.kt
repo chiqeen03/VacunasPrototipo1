@@ -26,6 +26,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        supportActionBar?.hide()
+
         paises = paisesAdmin.paises
         recyclerView = findViewById(R.id.recycleView)
 
@@ -69,23 +71,4 @@ class MainActivity : AppCompatActivity() {
         recyclerView.adapter = mainAdapter
     }
 
-
-    /*
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.main_menu, menu)
-
-        val searchItem: MenuItem = menu!!.findItem(R.id.action_search)
-        val searchView: SearchView = searchItem.actionView as SearchView
-        searchView.setOnQueryTextListener(object: SearchView.OnQueryTextListener{
-            override fun onQueryTextSubmit(p0: String?): Boolean {
-                return false
-            }
-            override fun onQueryTextChange(p0: String?): Boolean {
-                return true
-            }
-
-        })
-        return true
-    }
-    */
 }
