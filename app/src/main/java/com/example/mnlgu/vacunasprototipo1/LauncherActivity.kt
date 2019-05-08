@@ -22,7 +22,7 @@ class LauncherActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_launcher)
 
-        guardarPreferencias()
+        //guardarPreferencias()
 
         supportActionBar?.hide()
 
